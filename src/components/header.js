@@ -4,18 +4,30 @@ import { Text, View } from 'react-native';
 
 
 //Make a component
-class Header extends React.Component{
-  render() {
-    const { textStyle, viewStyle } = styles;
-    return(
-      <View style={viewStyle}>
-        <Text style={textStyle}>
-          Albums!
-        </Text>
-      </View>
-    );
-  }
-}
+// class Header extends React.Component{
+//   render() {
+//     const { textStyle, viewStyle } = styles;
+//     return(
+//       <View style={viewStyle}>
+//         <Text style={textStyle}>
+//           Albums!
+//         </Text>
+//       </View>
+//     );
+//   }
+// }
+
+const Header = (props) => {
+  const { textStyle, viewStyle } = styles;
+
+  return(
+    <View style={viewStyle}>
+      <Text style={textStyle}>
+         {props.headerText}
+      </Text>
+    </View>
+  );
+};
 
 const styles = {
   viewStyle: {
