@@ -3,11 +3,15 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Hello from './Hello';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 export default class App extends React.Component {
   render() {
     return(
-      <Header headerText={'Albums'}/>
+      <View>
+        <Header headerText={'Albums'}/>
+        <AlbumList /> 
+      </View>
     );
   }
 }
