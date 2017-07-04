@@ -1,12 +1,19 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { StyleSheet, View, Text } from 'react-native';
 
 export default class Hello extends React.Component{
   render() {
     return(
       <View>
-        <Text>Hello Srivatsa creating another component</Text>
+        <Text style={styles.hello}>Hello Srivatsa creating another component</Text>
       </View>
     )
   }
 }
+
+const styles = StyleSheet.create({
+  hello:{
+    backgroundColor: '#00FF00',
+    fontSize: 24
+  }
+})
