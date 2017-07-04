@@ -4,7 +4,7 @@ import { Text } from 'react-native';
 
 
 //Make a component
-export default class Header extends React.Component{
+class Header extends React.Component{
   render() {
     return(
       <Text>
@@ -16,3 +16,4 @@ export default class Header extends React.Component{
 
 
 //Make the component available to other parts of the app
+export default Header;
