@@ -26,9 +26,9 @@ const AlbumDetail = (props) => {
           source={{ uri: props.album.image }}
         />
       </CardSection>
-      
+
       <CardSection>
-        <Button />
+        <Button onPress={() => console.log(album.title)}/>
       </CardSection>
     </Card>
   );
