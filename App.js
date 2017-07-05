@@ -8,9 +8,9 @@ import AlbumList from './src/components/AlbumList';
 export default class App extends React.Component {
   render() {
     return(
-      <View>
+      <View style={{ flex: 1 }}>
         <Header headerText={'Albums'}/>
-        <AlbumList /> 
+        <AlbumList />
       </View>
     );
   }
